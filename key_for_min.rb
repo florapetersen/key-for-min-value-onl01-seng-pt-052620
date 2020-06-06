@@ -8,6 +8,8 @@ def key_for_min_value(hash)
       if value < smallestvalue
         value = smallestvalue
         key = smallestkey
+        smallestvalue = hash.values[0]
+        smallestkey = hash.keys[0]
       end
     end
   return smallestkey
