@@ -10,7 +10,7 @@ def key_for_min_value(hash)
   hash.first = min_key, min_value
   hash.each do |key, value|
     if value < min_value
-      min_key = key
+      key = min_key
     end
   end
   return min_key
