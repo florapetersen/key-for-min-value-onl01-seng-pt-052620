@@ -3,7 +3,7 @@ def key_for_min_value(hash)
     return nil
   else
     smallestkey = hash.keys[0]
-    smallestvalue = hash.values[0] 
+    smallestvalue = hash.values[0]
     hash.collect do |key, value|
       if value < smallestvalue
         value = smallestvalue
@@ -12,4 +12,3 @@ def key_for_min_value(hash)
     return smallestkey
   end
 end
-        
