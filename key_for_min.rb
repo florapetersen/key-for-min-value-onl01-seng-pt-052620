@@ -1,6 +1,7 @@
 def key_for_min_value(hash)
   if hash.size == 0
     return nil
+  end
   else
     smallestkey = hash.keys[0]
     smallestvalue = hash.values[0]
