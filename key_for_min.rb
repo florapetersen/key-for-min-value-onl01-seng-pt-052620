@@ -1,5 +1,5 @@
 def key_for_min_value(hash)
-  if hash_size == 0
+  if hash.size == 0
     return nil
   end
   hash.keys[0] = smallestkey
