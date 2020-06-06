@@ -6,7 +6,7 @@ def key_for_min_value(hash)
     hash.values[0] = smallestvalue
     hash.collect do |key, value|
       if value < hash.values[0]
-        hash.keys[0], hash.values[0] = hash.keys[1], hash.values[1]  
+        hash.keys[0], hash.values[0] = hash.keys[1], hash.values[1]
       end
     end
   return hash.keys[0]
