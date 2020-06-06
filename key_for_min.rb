@@ -4,8 +4,10 @@ def key_for_min_value(hash)
   else
     smallestkey = nil
     smallestvalue = nil
-    if smallestvalue = nil || value < smallestvalue
-      hash.collect do |key, value|
+    hash.collect do |key, value|
+        if smallestvalue = nil || value < smallestvalue
+          smallestvalue = value
+          smallestkey = key
     end
   end
   return smallestkey
